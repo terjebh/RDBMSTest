@@ -10,7 +10,7 @@ public class Main {
             Postgres query = new Postgres(args[0]);
         } else {
             while(true) {
-                System.out.println("Tast inn en SELECT-setning (eller q for å avslutte: ");
+                System.out.println("Tast inn en SELECT-setning (eller q for å avslutte): ");
                 Scanner in = new Scanner(System.in);
                 String sql = in.nextLine();
                 if(sql.equals("q")) {
