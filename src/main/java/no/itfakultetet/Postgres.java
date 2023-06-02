@@ -20,7 +20,8 @@ public class Postgres {
             st.close();
 
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            //throw new RuntimeException(e);
+            System.out.println("Noe gikk galt: \nFeilkode:"+ e.getErrorCode()+"\nFeilmelding: "+e.getMessage());
         }
 
     }
